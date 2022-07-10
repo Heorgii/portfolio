@@ -3,8 +3,12 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Portfolio</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Portfolio</title>
 </head>
 <body>
     <header class="header">
@@ -36,13 +40,15 @@
     <main class="main">
         <!-- Hero -->
         <section class="hero">
+         <div class="container">
             <h1 class="hero-title">Heorgii Rushchak</h1>
             <p class="hero-sckill">Web developer</p>
-            <p class="hero-language">ENG/RU</p>
+            <p class="hero-language"><span class="hero-language__text" >ENG</span> / <span class="hero-language__text">RU</span></p>
+         </div>
         </section>
 
         <!-- About -->
-        <section class="about">
+        <section class="about about-bg">
             <h2 class="about-title">About me</h2>
             <p class="about-me">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, accusantium.</p>
             <p class="about-me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, natus praesentium adipisci dolor quidem consectetur.</p>
@@ -51,7 +57,7 @@
         <!-- Skills -->
         <section class="skills">
             <h2 class="skills-title">Skills</h2>
-            <p>I can work with</p>
+            <p class="skills-discr">I can work with</p>
 
             <ul class="skill-list">
                 <li class="skill-item">HTML</li>
@@ -62,7 +68,7 @@
         </section>
 
         <!-- Works -->
-        <section class="work">
+        <section class="work work-bg">
             <h2 class="work-title">Works</h2>
             <ul class="work-list">
                 <li class="work-item"><a href="" class="work-item__link">Work 1</a></li>
@@ -78,7 +84,7 @@
             You are welcome!
         </p>
 
-        <button type="button">Send message</button>
+        <button type="button" class="button"><span class="btn-text"> Send message </span></button>
 
         <ul class="footer-group">
             <li class="contacts-item"><a href="tel:+38011111111" class="contacts-item__link">+380 11 11 1111</a></li>
