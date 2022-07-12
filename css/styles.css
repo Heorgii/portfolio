@@ -46,7 +46,7 @@ html {
     margin-right: 130px;
 }
 
-@media screen and (min-width:768px) and (max-width:1199px){
+@media screen and (min-width:768px) and (max-width:1199px) {
     .header-list__item:not(:last-child) {
         margin-right: 80px;
     }
@@ -71,12 +71,20 @@ html {
 
 .bg-fon {
     background-image: url(../img/port-comp.jpg);
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 387px;
     width: 943px;
     margin-bottom: 93px;
 }
+
+@media screen and (max-width:767px) {
+    .img-wraper{
+        display: flex;
+        justify-content: center;
+    }
+}
+
 
 @media screen and (max-width:767px) {
     .bg-fon {
@@ -87,7 +95,7 @@ html {
     }
 }
 
-@media screen and (min-width:768px) and (max-width:1199px){
+@media screen and (min-width:768px) and (max-width:1199px) {
     .bg-fon {
         height: 347px;
         width: 584px;
@@ -113,7 +121,15 @@ html {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
+}
+
+@media screen and (min-width:768px) {
+    .hero {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .hero-title {
@@ -127,7 +143,7 @@ html {
 @media screen and (max-width:767px) {
     .hero-title {
         margin-bottom: 23px;
-       
+
     }
 }
 
@@ -143,7 +159,7 @@ html {
 
 @media screen and (max-width:767px) {
     .hero-sckill {
-        margin-bottom: 36px;    
+        margin-bottom: 36px;
         text-align: end;
     }
 }
@@ -206,13 +222,13 @@ html {
     }
 }
 
- .button-open{
+.button-open {
     top: 68px;
     right: 30px;
 }
 
-.button-close{
-    top: 38px;    
+.button-close {
+    top: 38px;
     right: 134px;
 }
 
@@ -221,11 +237,11 @@ html {
     transition: 250ms ease;
 }
 
-.mob-item:not(:last-child){
+.mob-item:not(:last-child) {
     margin-bottom: 40px;
 }
 
-.mob-link{
+.mob-link {
     font-size: 34px;
     line-height: 42px;
 }
@@ -393,7 +409,7 @@ html {
     }
 }
 
-@media screen and (min-width:768px) and (max-width:1199px){
+@media screen and (min-width:768px) and (max-width:1199px) {
     .work-bg {
         width: 100%;
         height: 908px;
@@ -425,7 +441,7 @@ html {
     margin-bottom: 45px;
 }
 
-@media screen and (min-width:768px) and (max-width:1199px){
+@media screen and (min-width:768px) and (max-width:1199px) {
     .work-item__img {
         width: 593px;
         height: 333px;
@@ -440,7 +456,7 @@ html {
 }
 
 @media screen and (min-width:320px) and (max-width:500px) {
-    .work-item__img{
+    .work-item__img {
         width: 273px;
         height: 155px;
     }
