@@ -9,10 +9,10 @@ a {
     padding: 0;
     margin: 0;
 }
-
+/* 
 .container {
     margin: 0 122px;
-}
+} */
 
 :root {
     --first-text-color: #828282;
@@ -85,7 +85,6 @@ html {
     }
 }
 
-
 @media screen and (max-width:767px) {
     .bg-fon {
         background-image: url(../img/port-mb.jpg);
@@ -143,7 +142,6 @@ html {
 @media screen and (max-width:767px) {
     .hero-title {
         margin-bottom: 23px;
-
     }
 }
 
@@ -317,6 +315,34 @@ html {
     text-align: center;
 
     color: var(--secondary-text-color);
+}
+
+.about-send__btn{
+    margin-top: 30px;
+    border-radius: 50px;
+    border-color: transparent;
+    background-color: var(--secondary-text-color);
+    width: 180.5px;
+    height: 42px;
+    align-items: center;
+    cursor: pointer;
+
+    margin-bottom: 40px;
+    transition: 250ms ease;
+}
+
+.about-send__btn:hover,
+.about-send__btn:focus{
+    background-color: var(--first-text-color);
+}
+
+.btn-send__text{
+    font-family: var(--first-text-style);
+    font-size: 18px;
+    line-height: 22px;
+
+    text-align: center;
+    color: var(--btn-text-color);
 }
 
 /* Skills */
