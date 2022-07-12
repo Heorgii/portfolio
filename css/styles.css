@@ -70,7 +70,9 @@ html {
 /* Hero */
 
 .bg-fon {
-    background-color: var(--secondary-text-color);
+    background-image: url(../img/port-comp.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
     height: 387px;
     width: 943px;
     margin-bottom: 93px;
@@ -78,6 +80,7 @@ html {
 
 @media screen and (max-width:767px) {
     .bg-fon {
+        background-image: url(../img/port-mb.jpg);
         width: 316.5px;
         height: 478px;
         margin-bottom: 83px;
@@ -88,6 +91,7 @@ html {
     .bg-fon {
         height: 347px;
         width: 584px;
+        background-image: url(../img/portfolio-photo.jpg);
     }
 }
 
