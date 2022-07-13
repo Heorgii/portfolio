@@ -162,6 +162,40 @@ html {
     }
 }
 
+/* Arrow up */
+
+.to-top{
+    width: 40px;
+    height: 40px;
+    opacity: .5;
+    background: var(--secondary-text-color);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s cubic-bezier(.39,.575,.565,1);
+    /* animation: bounce 7s infinite; */
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.to-top:hover {
+    opacity: 1;
+    cursor: pointer;
+    box-shadow: 0 0 10px #907e82;
+}
+
+.to-top__link{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.arrow-up{
+    fill: aqua;
+}
+
 /* Mobile menu */
 
 .mobile-menu {
