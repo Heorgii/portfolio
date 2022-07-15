@@ -58,13 +58,11 @@
             <div class="bg-fon"></div>
         </div>
 
-        <div class="to-top">
-            <a href="#header" class="to-top__link">
-                <swg class="arrow-up" width="40" height="40">
-                    <use href="./img/sprite.svg#icon-close"></use>
-                </swg>
+            <a class="to-top__link" href="#header">
+              <svg class="arrow-up" width="14" height="14">
+                <use href="./img/sprite.svg#icon-arrow-up"></use>
+              </svg>
             </a>
-        </div>
 
         </section>
 
@@ -73,8 +71,6 @@
             <h2 class="about-title">About me</h2>
             <p class="about-me">Hi, I am Heorgii and I am Front-end developer.</p>
             <p class="about-me">I finished the Front-end courses. And I will be happy to work with you.</p>
-
-            <button type="button" class="about-send__btn"><span class="btn-send__text">Click here</span></button>
         </section>
 
         <!-- Skills -->
@@ -262,7 +258,50 @@
             You are welcome!
         </p>
 
-        <button type="button" class="button"><span class="btn-text"> Send message </span></button>
+        <button type="button" class="button" data-modal-open><span class="btn-text"> Send message </span></button>
+
+        <div class="backdrop is-hidden" data-modal>
+              
+            <div class="modal-wrapper">
+  
+              <button class="modal-btn" data-modal-close>
+                <svg width="11" height="11">
+                  <use href="./img/sprite.svg#icon-close"></use>
+                </svg>
+              </button>
+              
+              <!--Форма модалки -->
+  
+              <div>
+                
+                 <b class="modal-title"> Leave your details, I will call you back</b>
+                <form class="modal-form" name="modal-discr">
+  
+                  <label class="modal-form__group">
+                    <input class="modal-form__input" type="text" required name="user-name" id="user-name" placeholder="Full name">
+                  </label>
+  
+                  <label class="modal-form__group">       
+                   <input class="modal-form__input" type="tel" required name="user-tel" id="user-tel" placeholder="Phone">
+                  </label>
+  
+                  <label class="modal-form__group">  
+                   <input class="modal-form__input" type="email" required name="user-email" id="user-email" placeholder="E-mail">
+                  </label>
+  
+                 <div class="modal-form__btn">
+                 <button class="modal-btn__submit" type="submit"> <span class="modal-btn__text">Send</span></button>
+                 </div>
+                </form>
+  
+              </div>
+            
+            </div>
+  
+        </div>   
+
+   </div>   
+
 
         <ul class="footer-group">
             <li class="contacts-item"><a href="tel:+38011111111" class="contacts-item__link">+380 11 11 1111</a></li>
@@ -348,8 +387,12 @@
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-  
     <script defer src="js/mobile-menu.js"></script>
-  
+
+
+    <!-- Modal js -->
+    <script src="./js/modal.js"></script>
+
+
 </body>
 </html>
